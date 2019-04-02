@@ -1,205 +1,228 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 body {
-  background: #e9e9e9;
+background: #e9e9e9;
 }
 
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
 }
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (-webkit-min-device-pixel-ratio: 1) {
+
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 100px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content, .modal2-content, .modal3-content {
+position: relative;
+background-color: #fefefe;
+margin: auto;
+padding: 0;
+border: 1px solid #888;
+width: 80%;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+-webkit-animation-name: animatetop;
+-webkit-animation-duration: 0.4s;
+animation-name: animatetop;
+animation-duration: 0.4s
+}
+
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+from {top:-300px; opacity:0}
+to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+from {top:-300px; opacity:0}
+to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+color: white;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+.modal-header {
+padding: 2px 16px;
+background-color: #5cb85c;
+color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+padding: 2px 16px;
+background-color: #5cb85c;
+color: white;
+}
+
+
 
 
 
 .topnav {
-  overflow: hidden;
-  background-color: #e9e9e9;
+overflow: hidden;
+background-color: #e9e9e9;
 }
 
 .topnav a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 50px 26px 30px 98px;
-  text-decoration: none;
-  font-size: 17px;
+float: left;
+display: block;
+color: black;
+text-align: center;
+padding: 50px 26px 30px 98px;
+text-decoration: none;
+font-size: 17px;
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+background-color: #ddd;
+color: black;
 }
 
 .topnav a.active {
-  background-image: url("../images/logo.png");
-	width: 50px;
-  color: white;
+background-image: url("../images/logo.png");
+width: 50px;
+color: white;
 }
 
 
 .topnav .search-container {
-  float: center;
-	
+float: center;
+
 }
 
 .topnav input[type=text] {
-  padding: 6px ;
-  margin-top: 20px;
-	margin-left: 100px;
-  font-size: 20px;
-  border: none;
-	width: 500px;
-	border-radius: 20px;
+padding: 6px ;
+margin-top: 20px;
+margin-left: 100px;
+font-size: 20px;
+border: none;
+width: 500px;
+border-radius: 20px;
 }
 
 .topnav .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 20px;
-  margin-right: 199px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-	border-radius: 20px;
-  cursor: pointer;
+float: right;
+padding: 6px 10px;
+margin-top: 20px;
+margin-right: 199px;
+background: #ddd;
+font-size: 17px;
+border: none;
+border-radius: 20px;
+cursor: pointer;
 }
 
 .topnav .search-container button:hover {
-  background: #ccc;
+background: #ccc;
 }
-	  
-	 .icon-bar {
-  width: 100%;
-		 height: 90px;
-  background-color: white;
-  overflow: hidden;
-  position: fixed;
-  bottom: 0;
-		 border-radius: 45px 45px 0% 0%}
+
+
+.map{
+width: 100%;
+height: 598px;
+background-color: transparent;
+}
+
+
+
+.icon-bar {
+width: 100%;
+height: 90px;
+background-color: white;
+overflow: hidden;
+position: fixed;
+bottom: 0;
+border-radius: 45px 45px 0% 0%}
 
 .icon-bar a {
-  float: left;
-  width: 14.2%;
-	height: 70px;
-  text-align: center;
-  padding: 12px 0;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 36px;
+float: left;
+width: 14.2%;
+height: 70px;
+text-align: center;
+padding: 12px 0;
+transition: all 0.3s ease;
+color: white;
+font-size: 36px;
 }
 
 .icon-bar a:hover {
-  background-color: cadetblue;
+background-color: cadetblue;
 }
 
 
-	  .magazine{
-		  background-image: url("../images/menu icons/magazine.png");
-		  background-repeat: no-repeat;
-		  background-position: center;
-		  height: 40px;
-		 
-	  }
-	  .equipment{
-		  background-image: url( "../images/menu icons/equipment.png");
-		  background-repeat: no-repeat;
-		  background-position: center;
-		  height: 40px;
-	  }
-	  .book-room{
-		  background-image: url( "../images/menu icons/create-room.png");
-		  background-repeat: no-repeat;
-		  background-position: center;
-		  height: 40px;
-	  }
-	  .factum{
-		  background-image: url( "../images/menu icons/Factum.png");
-		  background-repeat: no-repeat;
-		  background-position: center;
-		  height: 40px;
-	  }
-	  .information{
-		  background-image: url( "../images/menu icons/information.png");
-		  background-repeat: no-repeat;
-		  background-position: center;
-		  height: 40px;
-	  }
-	  .print{
-		  background-image: url( "../images/menu icons/print.png");
-		  background-repeat: no-repeat;
-		  background-position: center;
-		  height: 40px;
-	  }
-	  .pickup{
-		  background-image: url( "../images/menu icons/pickupbook.png");
-		  background-repeat: no-repeat;
-		  background-position: center;
-		  height: 40px;
-	  }
-	  .popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+.magazine{
+background-image: url("../images/menu icons/magazine.png");
+background-repeat: no-repeat;
+background-position: center;
+height: 40px;
+
 }
-	  .popup{
-		  font-size: 1.6rem;
-		  background-color: skyblue;
-		  border-radius: 20px;
-		  position: relative;
-	  left: 350px;}
-/* The actual popup */
-.popup .popuptext {
-  visibility: hidden;
-  width: 295%;
-	height: 530px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: -35%;
-  margin-left: -220px;
+.equipment{
+background-image: url( "../images/menu icons/equipment.png");
+background-repeat: no-repeat;
+background-position: center;
+height: 40px;
+}
+.book-room{
+background-image: url( "../images/menu icons/create-room.png");
+background-repeat: no-repeat;
+background-position: center;
+height: 40px;
+}
+.factum{
+background-image: url( "../images/menu icons/Factum.png");
+background-repeat: no-repeat;
+background-position: center;
+height: 40px;
+}
+.information{
+background-image: url( "../images/menu icons/information.png");
+background-repeat: no-repeat;
+background-position: center;
+height: 40px;
+}
+.print{
+background-image: url( "../images/menu icons/print.png");
+background-repeat: no-repeat;
+background-position: center;
+height: 40px;
+}
+.pickup{
+background-image: url( "../images/menu icons/pickupbook.png");
+background-repeat: no-repeat;
+background-position: center;
+height: 40px;
 }
 
-/* Popup arrow */
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-/* Toggle this class - hide and show the popup */
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
 }
