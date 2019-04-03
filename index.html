@@ -1,15 +1,25 @@
-	<!doctype html>
+<!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="keywords" content="Intro">
-  <meta name="author" content="Intro">
-	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Intro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Intro Screen">
+<<<<<<< HEAD
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Intro</title>
 
 <link href="css/splash.css" rel="stylesheet" type="text/css">
+=======
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>Intro</title>
+
+    <link href="css/splash.css" rel="stylesheet" type="text/css">
+>>>>>>> master
 
 </head>
 
@@ -18,6 +28,7 @@
 
 
     <div class="topnav">
+<<<<<<< HEAD
   <a class="active" href="index.html"></a>
 
   <div class="search-container">
@@ -56,5 +67,147 @@ function myFunction() {
   popup.classList.toggle("show");
 }
 </script>
+=======
+        <a class="active" href="index.html"></a>
+
+        <div class="search-container">
+            <form action="https://multimusen.dk/bib-eaaa/index.html">
+                <input type="text" placeholder="Search by: Subject, Title, Author, Language " name="search">
+                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+        </div>
+    </div>
+    <div>
+
+        <div class="map">
+            <h2>1st Modal</h2>
+
+            <!-- Trigger/Open The Modal -->
+            <button class="myBtn">Open Modal</button>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">×</span>
+                        <h2>Modal Header</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>Some text in the Modal Body</p>
+                        <p>Some other text...</p>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>Modal Footer</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <h2>2nd Modal</h2>
+
+            <!-- Trigger/Open The Modal -->
+            <button class="myBtn">Open1</button>
+
+            <!-- The Modal -->
+            <div id="myModal2" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal2-content">
+                    <div class="modal-header">
+                        <span class="close">×</span>
+                        <h2>Header1</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>Some text1 ....</p>
+                        <p>Some other text1...</p>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>Footer1</h3>
+                    </div>
+                </div>
+
+            </div>
+            <h2> Modal3</h2>
+
+            <!-- Trigger/Open The Modal -->
+            <button class="myBtn">Open3</button>
+
+            <!-- The Modal -->
+            <div id="myModal3" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal3-content">
+                    <div class="modal-header">
+                        <span class="close">×</span>
+                        <h2>Header1</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>Some text12 ....</p>
+                        <p>Some other text121...</p>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>Footer121</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="icon-bar">
+            <a class="equipment" href="#"></a>
+            <a class="magazine" href="#"></a>
+            <a class="book-room" href="#"></a>
+            <a class="factum" href="#"></a>
+            <a class="information" href="Information.html"></a>
+            <a class="print" href="#"></a>
+            <a class="pickup" href="#"></a>
+        </div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementsByClassName('modal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementsByClassName("myBtn");
+
+
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close");
+
+        // When the user clicks the button, open the modal 
+        btn[0].onclick = function() {
+            modal[0].style.display = "block";
+        }
+
+        btn[1].onclick = function() {
+            modal[1].style.display = "block";
+        }
+        btn[2].onclick = function() {
+            modal[2].style.display = "block";
+        }
+        // When the user clicks on <span> (x), close the modal
+        span[0].onclick = function() {
+            modal[0].style.display = "none";
+        }
+
+        span[1].onclick = function() {
+            modal[1].style.display = "none";
+        }
+        span[2].onclick = function() {
+            modal[2].style.display = "none";
+        }
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+>>>>>>> master
 </body>
+
 </html>
