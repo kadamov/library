@@ -27,6 +27,27 @@ body {
 		 font-weight: 900;
 		
 	}
+	#btn2{
+		max-width: 100%;
+		position: relative;
+		left: 22%;
+		top: 120px;
+		padding: 2% 4% 2%;
+		font-size: 2vw;
+		 font-weight: 900;
+		
+	}
+	#bt3{
+		max-width: 100%;
+		position: relative;
+		left: 45%;
+		top: 75px;
+		padding: 2% 4% 2%;
+		font-size: 2vw;
+		 font-weight: 900;
+		
+	}
+	
 	
 	
 
@@ -128,6 +149,7 @@ body {
     padding: 0;
     border: 1px solid #888;
     width: 80%;
+	  
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
@@ -279,10 +301,10 @@ body {
   .icon-bar a {
     float: left;
     width: 14.2%;
-    height: 75px;
+    height: 90px;
     text-align: center;
     padding: 12px 0;
-	  margin-top: 9px;
+	  
     transition: all 0.3s ease;
     color: white;
   }
